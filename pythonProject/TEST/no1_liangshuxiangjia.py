@@ -7,11 +7,3 @@ class Solution(object):
                     return [ i , j]
         return [-1,-1]
 
-
-    def add(a,b):
-        return a+b
-
-
-class Abc():
-    def haha(self):
-        print("啥也不是")

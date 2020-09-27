@@ -71,15 +71,13 @@ class Solution(object):
         result=0
         lenth=len(s)
 
-        for i in range(0, lenth):
+        for i in range(0, lenth-1):
             #防止下标越界
-            if(i<lenth-1):
-                if(svalue[s[i]]>=svalue[s[i+1]]):
-                    result+=svalue[s[i]]
-                else:
-                    result -= svalue[s[i]]
+            if(svalue[s[i]]>=svalue[s[i+1]]):
+                result+=svalue[s[i]]
             else:
-                result+=svalue[s[i]];
+                result -= svalue[s[i]]
+        result+=svalue[s[lenth-1]];
         return result
 
 
