@@ -1,4 +1,3 @@
-import main
 
 
 class Solution(object):
@@ -14,9 +13,10 @@ class Solution(object):
             if(a[i]==a[lenth-1]):
                 lenth-=1
             else:
-                return 1==0
+                return False
 
-        return 1==1
+        return True
 
 if __name__ == '__main__':
-    print(Solution.isPalindrome(main,12321))
+    a = Solution()
+    print(a.isPalindrome(12321))
